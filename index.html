@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+     <meta charset="UTF-8">
+     <title>EASYONE_BLOG</title>
+     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js'></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
+     <link rel="stylesheet" href="./css/reset.css">
+     <link rel="stylesheet" href="./css/main.css">
+     <link rel="stylesheet" href="./css/slide.css">
+     <link rel="stylesheet" href="./css/message_popup.css">
+     <!-- <link rel="shortcut icon" href="./img/00_icon_red.png"> -->
+     <!-- <link rel="shortcut icon" href="./img/00_icon_blue.png"> -->
+     <!-- <link rel="shortcut icon" href="./img/00_icon_black.png"> -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" >
+     <link rel="shortcut icon" href="./img/00_icon_black2.png">
+     <script  src="./js/main.js"></script>
+     <script  src="./js/message_js.js"></script>
+</head>
+<body>
+     <!-- 마우스 -->
+     <div class="circle"></div>
+     <div class="circle-follow"></div>
+
+     <!-- 사이드바 -->
+     <section class="side_bar">
+          <div class="silde_main_wrap">
+               <img src="./img/big_pointer_black.png" alt="silde_main" class="slide_btn" id="silde_main">
+               <span>MAIN</span>
+          </div>
+          <div class="silde_skills_wrap slide_btn">
+               <img src="./img/big_pointer_black.png" alt="silde_skills" class="slide_btn" id="silde_skills">
+               <span>SKILLS</span>
+          </div>
+          <div class="silde_port_wrap slide_btn">
+               <img src="./img/big_pointer_black.png" alt="silde_port" class="slide_btn" id="silde_port">
+               <span>PORTFOLIO</span>
+          </div>
+          <div class="silde_con_wrap slide_btn">
+               <img src="./img/big_pointer_black.png" alt="silde_con" class="slide_btn" id="silde_con">
+               <span>CONTACT</span>
+          </div>
+     </section>
+     <!-- 스킬 바 -->
+     
+     <!-- <section class="skills_fixed">
+     </section> -->
+
+     <div class="scroll_circle">
+          <i class="fa fa-arrow-down"></i>
+     </div>
+
+     <div class="wave_bg"></div>
+     <section class="main_container">
+          <!-- <section class="scroll_ment">
+               <div></div>
+               <span>Scroll</span>
+          </section> -->
+          <section id="circle_container" class="circle_container">
+               <button id="circle_button" class="circle_button">
+                    <span class="red_pointer">EASY ONE</span>
+               </button>
+          </section>
+          
+          <section class="hidden_area">
+               <section class="contact_wrap">
+                    
+               </section>
+               <section class="sec_wrap age_wrap">
+                    <div class="sec_wrap_posi">
+                         <!-- <div class="title_wrap_div">
+                              <h3>만나서 반갑습니다!</h3>
+                         </div> -->
+                         <div class="content_wrap_div">
+                              <span>
+                                   삽질이 가장
+                                   <b class="red_pointer">EASY</b>
+                                   했어요.
+                              </span>
+                         </div>
+                    </div>
+               </section>
+          </section>
+     </section>
+
+     <section id="horizontal_section">
+          <div id="tall_outer_container">
+               <div id="sticky_inner_container">
+                    <div id="horizontal_translate_container">
+                         <div id="sections_container">
+                              <div class="section_block_bg1"></div>
+                              <div class="section_block">
+                                   <section class="about_me">
+                                        <img class="infome" src="./img/info_me.jpg" alt="me">
+                                        <img class="circle_point" src="./img/main_circle.png" alt="me_pic">
+                                        <div class="info_me">
+                                             <span class="info_title">
+                                                  안녕하세요.
+                                             </span>
+                                             <span class="info_text title">
+                                                  용기 가득한 <b class="blue_pointer">프론트엔드 이지원</b>입니다.
+
+                                             </span>
+                                        </div>
+                                        <div class="info_me second">
+                                             <img src="./img/line_blue.png" alt="line">
+                                             <span class="info_text">
+                                                  변화하고 성장을 하는 데엔 많은 용기가 필요하다고 생각합니다.<br>
+                                                  프로젝트를 진행하면서 오류와 버그를 두려워하지 않고<br>
+                                                  최선을 다해 싸워 승리했을 때의 성취감이<br>
+                                                  목표로 한 단계 더 나아가게 하는 원동력이 됩니다.
+                                             </span>
+                                        </div>
+                                        <div class="info_me third">
+                                             <img src="./img/line_blue.png" alt="line">
+                                             <span class="info_text">
+                                                  항상 열정과 배움의 자세를 갖추고<br>
+                                                  도전하는 용기를 오래 지켜나가는 사람이 되겠습니다.
+                                             </span>
+                                        </div>
+                                   </section>
+                                   <div class="skills_wrap">
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+
+     <section class="portfolio_container_bg">
+          <div class="section_block_bg"></div>
+          <div class="portfolio_container_bg_green"></div>
+          <section class="portfolio_container">
+               <section class="portfolio_wrap">
+                    <section class="ml">
+                         <span class="matrixC">
+                         matrix<br>
+                         calculator
+                         </span>
+                         <p>
+                              <button class="btn_wrapper">
+                                   <a class="btn" target="_blank" href="../02_MatrixCalculator/">
+                                        <span>VIEW WEB</span>
+                                   </a>
+                              </button>
+                              <button class="btn_wrapper">
+                                   <a class="btn" target="_blank" href="../02_MatrixCalculator/ppt/MatrixCalculator.pdf">
+                                        <span>VIEW PDF</span>
+                                   </a>
+                              </button>
+                         </p>
+                    </section>
+               </section>
+               <section class="portfolio_wrap">
+                    <section class="ml">
+                         <span class="changeC">
+                              Change<br>
+                              calculator
+                         </span>
+                         <p>
+                              <button class="btn_wrapper">
+                                   <a class="btn" target="_blank" href="../04_ChangeCalculator/">
+                                        <span>VIEW WEB</span>
+                                   </a>
+                              </button>
+                              <button class="btn_wrapper">
+                                   <a class="btn" target="_blank" href="../04_ChangeCalculator/ppt/ChangeCalculator.pdf">
+                                        <span>VIEW PDF</span>
+                                   </a>
+                              </button>
+                         </p>
+                    </section>
+               </section>
+
+               <!-- 동물의숲 -->
+               <section class="portfolio_wrap">
+                    <section class="ml">
+                         <span class="animalC">
+                              Animal<br>
+                              Crossing
+                         </span>
+                         <p>
+                              <button class="btn_wrapper">
+                                   <a class="btn" target="_blank" href="../08_AnimalCrossing/">
+                                        <span>VIEW WEB</span>
+                                   </a>
+                              </button>
+                              <button class="btn_wrapper">
+                                   <a class="btn" target="_blank" href="../08_AnimalCrossing/ppt/AnimalCrossing.pdf">
+                                        <span>VIEW PDF</span>
+                                   </a>
+                              </button>
+                         </p>
+                    </section>
+               </section>
+
+               
+               <section class="portfolio_wrap">
+                    <section class="ml">
+                         <span class="lineG">
+                              Line<br>
+                              Games
+                         </span>
+                         <p>
+                              <button class="btn_wrapper">
+                                   <a class="btn" target="_blank" href="../07_LineGames/">
+                                        <span>VIEW WEB</span>
+                                   </a>
+                              </button>
+                              <button class="btn_wrapper">
+                                   <a class="btn" target="_blank" href="../07_LineGames/ppt/LINEGAMES.pdf">
+                                        <span>VIEW PDF</span>
+                                   </a>
+                              </button>
+                         </p>
+                    </section>
+               </section>
+
+               
+               <section class="portfolio_wrap">
+                    <section class="ml">
+                         <span class="starK">
+                              Starbucks<br>
+                              Kiosk
+                         </span>
+                         <p>
+                              <button class="btn_wrapper">
+                                   <a class="btn" target="_blank" href="../05_KioskProject/">
+                                        <span>VIEW WEB</span>
+                                   </a>
+                              </button>
+                              <button class="btn_wrapper">
+                                   <a class="btn" target="_blank" href="../05_KioskProject/ppt/StarbucksKiosk.pdf">
+                                        <span>VIEW PDF</span>
+                                   </a>
+                              </button>
+                         </p>
+                    </section>
+               </section>
+
+               
+               <section class="portfolio_wrap">
+                    <section class="ml">
+                         <span class="GrapeF">
+                              Grape<br>
+                              Festival
+                         </span>
+                         <p>
+                              <button class="btn_wrapper">
+                                   <a class="btn" target="_blank" href="../01_GrapeFestival/">
+                                        <span>VIEW WEB</span>
+                                   </a>
+                              </button>
+                              <button class="btn_wrapper">
+                                   <a class="btn" target="_blank" href="../01_GrapeFestival/ppt/GrapeFestival.pdf">
+                                        <span>VIEW PDF</span>
+                                   </a>
+                              </button>
+                         </p>
+                    </section>
+               </section>
+
+               <section class="portfolio_wrap">
+                    <section class="ml">
+                         <span class="detailP">
+                              Product<br>
+                              Detail
+                         </span>
+                         <p>
+                              <button class="btn_wrapper green_hover">
+                                   <a class="btn btn_green_hover" target="_blank" href="../03_ProductInfo/">
+                                        <span>VIEW WEB</span>
+                                   </a>
+                              </button>
+                              <button class="btn_wrapper green_hover">
+                                   <a class="btn btn_green_hover" target="_blank" href="../03_ProductInfo/ppt/ProductInfo.pdf">
+                                        <span>VIEW PDF</span>
+                                   </a>
+                              </button>
+                         </p>
+                    </section>
+               </section>
+
+
+               
+          </section>
+
+          <section class="portfolio_info_container">
+               <!-- 행렬계산기 -->
+               <section class="portfolio_wrap">
+                    <div class="por_info_wrap matrixC_info">
+                         <div>
+                              <span>JAVASCRIPT, SASS</span>
+                         </div>
+                         <p></p>
+                         <div>
+                              <span>
+                                   2개의 행렬을 더 하기, 빼기, 곱하기 계산해주는 프로그램입니다.<br>
+                                   자바스크립트의 이차원 배열과 반복문을 이용하여 만들었습니다.
+                              </span>
+                         </div>
+                    </div>
+               </section>
+
+               <!-- 거스름돈 계산기 -->
+               <section class="portfolio_wrap">
+                    <div class="por_info_wrap changeC_info">
+                         <div>
+                              <span>JQUERY, SASS, PUG</span>
+                         </div>
+                         <p></p>
+                         <div>
+                              <span>
+                                   물건을 산 후 화폐별 거스름돈을 계산해주는 프로그램입니다.<br>
+                                   제이쿼리로 DOM에 있는 값과 객체를 활용하여 만들었습니다.
+                              </span>
+                         </div>
+                    </div>
+               </section>
+
+               <!-- 동물의 숲 캐릭터 소개 -->
+               <section class="portfolio_wrap">
+                    <div class="por_info_wrap animalC_info">
+                         <div>
+                              <span>JQUERY, SASS</span>
+                         </div>
+                         <p></p>
+                         <div>
+                              <span>
+                                   동물의 숲의 카라멜, 쭈니, 메리어스 캐릭터 소개 페이지입니다.<br>
+                                   클래스와 클로져를 활용하여 만들었습니다.
+                              </span>
+                         </div>
+                    </div>
+               </section>
+               
+               <!-- 라인게임즈 -->
+               <section class="portfolio_wrap">
+                    <div class="por_info_wrap lineG_info">
+                         <div>
+                              <span>JAVASCRIPT, JQUERY, SASS</span>
+                         </div>
+                         <p></p>
+                         <div>
+                              <span>
+                                   라인게임즈 회사소개 페이지입니다.<br>
+                                   모바일과 태블릿 호환되는 반응형 페이지입니다. 
+                              </span>
+                         </div>
+                    </div>
+               </section>
+
+               <section class="portfolio_wrap">
+                    <div class="por_info_wrap starK_info">
+                         <div>
+                              <span>AJAX, PHP, JQUERY, SASS</span>
+                         </div>
+                         <p></p>
+                         <div>
+                              <span>
+                                   AJAX와 PHP를 이용하여 DB에 있는 값을 JSON 파일로 받아와<br> 
+                                   JQUERY를 이용하여 값을 제어했습니다.
+                              </span>
+                         </div>
+                    </div>
+               </section>
+              
+               <section class="portfolio_wrap">
+                    <div class="por_info_wrap GrapeF_info">
+                         <div>
+                              <span>HTML, SASS, JAVASCRIPT</span>
+                         </div>
+                         <p></p>
+                         <div>
+                              <span>
+                                   포도 축제에 대해 안내하는 축제 소개 홈페이지입니다.<br>
+                                   HTML과 SASS로 레이아웃을 만들고, JS 객체와 배열을 사용했습니다.
+                              </span>
+                         </div>
+                    </div>
+               </section>
+               
+               <section class="portfolio_wrap">
+                    <div class="por_info_wrap detailP_info">
+                         <div>
+                              <span>PHOTOSHOP, ILLUSTRATOR</span>
+                         </div>
+                         <p></p>
+                         <div>
+                              <span>
+                                   제품에 자세하게 설명하는 페이지입니다.<br>
+                                   포토샵과 일러스트를 활용하여 만들었습니다.
+                              </span>
+                         </div>
+                    </div>
+               </section>
+               
+          </section>
+     </section>
+     <section class="contact_container">
+          <div>
+               <address>
+                    <p>KAKAOTALK</p><p><a href="https://open.kakao.com/o/sb72OfGd" class="contact_hover" id="contact_kakao" target="_blank">dy_o_ni</a></p>
+                    <p>PHONE</p><p><a href="tel:01056141498" class="contact_hover" id="contact_phone" target="_blank">010-1234-1234</a></p>
+                    <p>ADDRESS</p><p>경기도 안산시 단원구 안산역</p>
+                    <p>EMAIL</p><p><a href="mailto:meowoof01@gmail.com" class="contact_hover" id="contact_email" target="_blank">meowoof01@gmail.com</a></p>
+                    <p class="send_massage_title">MESSAGE</p><button class="send_massage_btn">문자보내기</button>
+               </address>
+          </div>
+          <section class="message_popup">
+               <div class="capArae" id="capArae">
+               </div>
+          </section>
+     </section>
+     
+</body>
+</html>

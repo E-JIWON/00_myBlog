@@ -1,0 +1,35 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "BRADHITC";
+  src: url("../ttf/BRADHITC.TTF");
+}
+@font-face {
+  font-family: "Papyrus";
+  src: url("../ttf/Typo_PapyrusM.ttf");
+}
+@font-face {
+  font-family: "mother";
+  src: url("../ttf/나눔손글씨 딸에게 엄마가.ttf");
+}
+@font-face {
+  font-family: "massage";
+  src: url("../ttf/a꽃피는봄.ttf");
+}
+@font-face {
+  font-family: "tempFont";
+  src: url("../ttf/210 연필스케치R.ttf");
+}
+b {
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  cursor: none;
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+}/*# sourceMappingURL=common.css.map */

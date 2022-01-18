@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'BRADHITC';
+  src: url('../ttf/BRADHITC.TTF');
+}
+@font-face {
+  font-family: 'Papyrus';
+  src: url('../ttf/Typo_PapyrusM.ttf');
+}
+@font-face {
+  font-family: 'mother';
+  src: url('../ttf/나눔손글씨\ 딸에게\ 엄마가.ttf');
+}
+@font-face {
+  font-family: 'massage';
+  src: url('../ttf/a꽃피는봄.ttf');
+}
+@font-face{
+  font-family: 'tempFont';
+  src: url("../ttf/210\ 연필스케치R.ttf");
+}
+
+   
+@mixin center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin bgPosition {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@mixin infoAni {
+  transition: 0.5s linear;
+  margin-left:50%;
+  opacity: 0;
+  -webkit-transition: 0.5s linear;
+  -moz-transition: 0.5s linear;
+  -ms-transition: 0.5s linear;
+  -o-transition: 0.5s linear;
+}
+
+
+@mixin circlebtn {
+  z-index: 10500;
+  border-radius: 50%;
+  outline: none;
+  cursor: none;
+  border: 0;
+
+  background-color: transparent;
+  background-size: contain;
+  
+}
+
+
+b{font-weight: normal;}
+a{text-decoration: none; cursor: none;}
+button{background-color: transparent; border:0; outline: 0;}
+$main_width: 25rem;
+$main_height: 25rem;
+$main_font_size : 2.5rem;
+$sub_font_size :  2rem;
+$mF: 'BRADHITC';
+$papy : 'Papyrus';
+$moth : 'mother';
+$msT : 'massage';
+$tempF : 'tempFont';
+
+$point_color_red : #E75349;
+$point_color_green : #49B96F;
+$point_color_blue : #2959A7;
+$point_color_yellow : #FCDC63;
+$main_color : #333333;

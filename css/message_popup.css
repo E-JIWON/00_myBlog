@@ -1,0 +1,159 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "BRADHITC";
+  src: url("../ttf/BRADHITC.TTF");
+}
+@font-face {
+  font-family: "Papyrus";
+  src: url("../ttf/Typo_PapyrusM.ttf");
+}
+@font-face {
+  font-family: "mother";
+  src: url("../ttf/나눔손글씨 딸에게 엄마가.ttf");
+}
+@font-face {
+  font-family: "massage";
+  src: url("../ttf/a꽃피는봄.ttf");
+}
+@font-face {
+  font-family: "tempFont";
+  src: url("../ttf/210 연필스케치R.ttf");
+}
+b {
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  cursor: none;
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+}
+
+.message_popup {
+  position: absolute;
+  background-color: #2959A7;
+  border: 2px solid #FCDC63;
+  width: 35vw;
+  height: 19vw;
+  border-radius: 1vw;
+  -webkit-border-radius: 1vw;
+  -moz-border-radius: 1vw;
+  -ms-border-radius: 1vw;
+  -o-border-radius: 1vw;
+  display: flex;
+  flex-direction: column;
+  bottom: 19.5%;
+  left: -50%;
+  transition: 0.5s linear;
+  -webkit-transition: 0.5s linear;
+  -moz-transition: 0.5s linear;
+  -ms-transition: 0.5s linear;
+  -o-transition: 0.5s linear;
+}
+.message_popup div {
+  width: 80%;
+  margin: 1vw 10%;
+  display: flex;
+}
+.message_popup div:first-child, .message_popup div:nth-child(2) {
+  height: 2.5vw;
+}
+.message_popup div:first-child span, .message_popup div:nth-child(2) span {
+  line-height: 2.5vw;
+}
+.message_popup div.last_div {
+  height: 8vw;
+}
+.message_popup div.last_div span {
+  line-height: 2vw;
+}
+.message_popup div.last_div .byte_text {
+  color: #E75349;
+  margin: 0 7px;
+  display: inline-block;
+}
+.message_popup div.last_div strong {
+  font-size: 1vw;
+}
+.message_popup div.capArae {
+  height: 11vw;
+}
+.message_popup div.capArae .captchaArea {
+  width: 100%;
+  height: 100%;
+}
+.message_popup div.capChk {
+  height: 3vw;
+}
+.message_popup div.capChk #valCapt {
+  font-size: 2vw;
+  width: 50%;
+  color: #FCDC63;
+  text-align: center;
+}
+.message_popup div.capChk #valCapt::-moz-placeholder {
+  font-size: 1.2vw;
+}
+.message_popup div.capChk #valCapt:-ms-input-placeholder {
+  font-size: 1.2vw;
+}
+.message_popup div.capChk #valCapt::placeholder {
+  font-size: 1.2vw;
+}
+.message_popup div.capChk button {
+  width: 35%;
+  background-color: #FCDC63;
+  font-family: "tempFont";
+  box-shadow: 0px 0px transparent;
+  font-size: 1vw;
+  margin-left: 3vw;
+  border-radius: 0.5vw;
+  -webkit-border-radius: 0.5vw;
+  -moz-border-radius: 0.5vw;
+  -ms-border-radius: 0.5vw;
+  -o-border-radius: 0.5vw;
+}
+.message_popup div.capChk button:hover {
+  box-shadow: 0px 0px 0px 2px #FCDC63;
+  border: 2px solid #2959A7;
+  transition: 0.5s linear;
+  -webkit-transition: 0.5s linear;
+  -moz-transition: 0.5s linear;
+  -ms-transition: 0.5s linear;
+  -o-transition: 0.5s linear;
+}
+.message_popup div span {
+  display: block;
+  color: #FCDC63;
+  font-family: "tempFont";
+  width: 25%;
+  margin-right: 5%;
+  font-size: 1.2vw;
+}
+.message_popup div input, .message_popup div textarea {
+  font-family: "massage";
+  width: 70%;
+  padding: 0.5vw;
+  outline: none;
+  background-color: #2959A7;
+  border: 2px solid #FCDC63;
+  border-radius: 0.5vw;
+  -webkit-border-radius: 0.5vw;
+  -moz-border-radius: 0.5vw;
+  -ms-border-radius: 0.5vw;
+  -o-border-radius: 0.5vw;
+  font-size: 1.25vw;
+  color: #FCDC63;
+}
+.message_popup div textarea {
+  overflow-y: scroll;
+  resize: vertical;
+}
+.message_popup .un_visible {
+  visibility: hidden;
+}/*# sourceMappingURL=message_popup.css.map */
